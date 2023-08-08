@@ -1,0 +1,21 @@
+version: 1
+transformation:
+    profile_config_file: /Users/shammyz/.dbt/profiles.yml
+    remote: false
+scheduler:
+    composer:
+        project_id: ""
+        bucket_name: ""
+        service_account_file: ""
+    dag:
+        name: ""
+        start_date: ""
+        schedule_interval: ""
+        credential_var: ""
+dex:
+    url: http://localhost:8080
+    project_environment: ""
+    api_key: ""
+    remote_task_endpoint: /v1/transformation/remote/task
+    local_task_endpoint: /v1/transformation/local/task
+    dag_generation_endpoint: /v1/orchestration/dags
